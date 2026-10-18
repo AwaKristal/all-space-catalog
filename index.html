@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Space Catalog (ASC)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>All Space Catalog (ASC)</h1>
+      <p id="author-text">Created by AwaKristal</p>
+    </div>
+    <button class="lang-btn" onclick="toggleLanguage()">🌐 EN / ES</button>
+  </header>
+
+  <div class="hero">
+    <p id="desc-text"></p>
+  </div>
+
+  <div class="nav-breadcrumb" id="breadcrumb">
+    <button class="back-btn" onclick="showCategories()" id="back-btn-text">← Back to Categories</button>
+  </div>
+
+  <main class="grid-container" id="app-grid"></main>
+
+  <!-- Modal / Ventana flotante de detalles del objeto celeste -->
+  <div class="modal" id="object-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">✕</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-body">
+        <h2 id="modal-title"></h2>
+        <ul class="info-list">
+          <li><strong id="lbl-year">Discovery Year:</strong> <span id="modal-year"></span></li>
+          <li><strong id="lbl-type">Type / Class:</strong> <span id="modal-type"></span></li>
+          <li><strong id="lbl-dist">Distance from Earth:</strong> <span id="modal-dist"></span></li>
+        </ul>
+        <p><strong id="lbl-char">Key Characteristics:</strong></p>
+        <p id="modal-desc" class="modal-desc-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
