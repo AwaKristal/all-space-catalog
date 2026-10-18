@@ -26,62 +26,161 @@ const database = [
   {
     id: "solar-system",
     name: { en: "Solar System", es: "Sistema Solar" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/800px-Planets2013.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Planets2013.svg",
     subtext: { en: "Planets, Moons, Dwarf Planets, Asteroids & Comets", es: "Planetas, Lunas, Planetas Enanos, Asteroides y Cometas" },
     items: [
       {
         name: { en: "The Sun", es: "El Sol" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/600px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Yellow Dwarf Star (G2V)", es: "Estrella Enana Amarilla (G2V)" },
-        dist: "0.0000158 AU (149.6M km)",
+        dist: { en: "0.0000158 AU (149.6M km)", es: "0.0000158 UA (149.6M km)" },
         desc: {
-          en: "The star at the center of our Solar System. It holds 99.86% of the total mass of the Solar System.",
-          es: "La estrella en el centro de nuestro Sistema Solar. Contiene el 99.86% de la masa total del Sistema Solar."
+          en: "The star at the center of our Solar System, holding 99.86% of the system's total mass.",
+          es: "La estrella en el centro de nuestro Sistema Solar, que contiene el 99.86% de la masa total del sistema."
+        }
+      },
+      {
+        name: { en: "Mercury", es: "Mercurio" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_c1666130949_desktop.png",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
+        dist: { en: "0.39 AU", es: "0.39 UA" },
+        desc: {
+          en: "The smallest planet in the Solar System and the closest to the Sun.",
+          es: "El planeta más pequeño del Sistema Solar y el más cercano al Sol."
+        }
+      },
+      {
+        name: { en: "Venus", es: "Venus" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
+        dist: { en: "0.72 AU", es: "0.72 UA" },
+        desc: {
+          en: "The hottest planet in our solar system due to a runaway greenhouse effect.",
+          es: "El planeta más caliente de nuestro sistema solar debido a un efecto invernadero extremo."
         }
       },
       {
         name: { en: "Earth", es: "Tierra" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/cb/cb/The_Blue_Marble_%28remastered%29.jpg/600px-The_Blue_Marble_%28remastered%29.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
-        dist: "0 AU",
+        dist: { en: "0 AU", es: "0 UA" },
         desc: {
-          en: "The third planet from the Sun and the only astronomical object known to harbor life.",
-          es: "El tercer planeta desde el Sol y el único objeto astronómico conocido que alberga vida."
+          en: "Our home world, the third planet from the Sun and the only place known to harbor life.",
+          es: "Nuestro planeta hogar, el tercer planeta desde el Sol y el único conocido que alberga vida."
+        }
+      },
+      {
+        name: { en: "The Moon", es: "La Luna" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Natural Satellite", es: "Satélite Natural" },
+        dist: { en: "0.00257 AU (384,400 km)", es: "0.00257 UA (384,400 km)" },
+        desc: {
+          en: "Earth's only natural satellite and the fifth largest moon in the Solar System.",
+          es: "El único satélite natural de la Tierra y la quinta luna más grande del Sistema Solar."
+        }
+      },
+      {
+        name: { en: "Mars", es: "Marte" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
+        dist: { en: "1.52 AU", es: "1.52 UA" },
+        desc: {
+          en: "The Red Planet, home to Olympus Mons, the largest volcano in the Solar System.",
+          es: "El Planeta Rojo, hogar del Monte Olimpo, el volcán más grande del Sistema Solar."
         }
       },
       {
         name: { en: "Jupiter", es: "Júpiter" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Jupiter_New_Horizons_Hubble_2020-08-25.jpg/600px-Jupiter_New_Horizons_Hubble_2020-08-25.jpg",
-        year: { en: "Prehistoric (Moons: 1610)", es: "Prehistórico (Lunas: 1610)" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28PNG%29.png",
+        year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Gas Giant", es: "Gigante Gaseoso" },
-        dist: "5.2 AU",
+        dist: { en: "5.20 AU", es: "5.20 UA" },
         desc: {
-          en: "The largest planet in our Solar System, famous for its Great Red Spot storm.",
-          es: "El planeta más grande de nuestro Sistema Solar, famoso por su Gran Mancha Roja."
+          en: "The largest planet in the Solar System, famous for its Great Red Spot.",
+          es: "El planeta más grande del Sistema Solar, famoso por su Gran Mancha Roja."
+        }
+      },
+      {
+        name: { en: "Europa", es: "Europa" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/54/Europa-moon-with-margins.jpg",
+        year: "1610",
+        type: { en: "Galilean Moon", es: "Luna Galileana" },
+        dist: { en: "5.20 AU", es: "5.20 UA" },
+        desc: {
+          en: "Jupiter's icy moon with a liquid water ocean beneath its crust.",
+          es: "Luna helada de Júpiter con un océano de agua líquida bajo su corteza."
         }
       },
       {
         name: { en: "Saturn", es: "Saturno" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/e2/Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg/600px-Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Saturn_with_auroras.jpg",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Gas Giant", es: "Gigante Gaseoso" },
-        dist: "9.5 AU",
+        dist: { en: "9.58 AU", es: "9.58 UA" },
         desc: {
-          en: "Known for its extensive and complex ring system made mostly of ice particles.",
-          es: "Conocido por su extenso y complejo sistema de anillos compuesto principalmente de hielo."
+          en: "Famous for its stunning and ring system composed primarily of ice particles.",
+          es: "Famoso por su impresionante sistema de anillos compuesto principalmente de hielo."
+        }
+      },
+      {
+        name: { en: "Titan", es: "Titán" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/4/45/Titan_in_true_color.jpg",
+        year: "1655",
+        type: { en: "Natural Satellite", es: "Satélite Natural" },
+        dist: { en: "9.58 AU", es: "9.58 UA" },
+        desc: {
+          en: "Saturn's largest moon, having a dense atmosphere and liquid methane lakes.",
+          es: "La luna más grande de Saturno, con una atmósfera densa y lagos de metano líquido."
+        }
+      },
+      {
+        name: { en: "Uranus", es: "Urano" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg",
+        year: "1781",
+        type: { en: "Ice Giant", es: "Gigante Helado" },
+        dist: { en: "19.22 AU", es: "19.22 UA" },
+        desc: {
+          en: "An ice giant that rotates on its side with an axial tilt of 98 degrees.",
+          es: "Un gigante helado que rota de lado con una inclinación axial de 98 grados."
+        }
+      },
+      {
+        name: { en: "Neptune", es: "Neptuno" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg",
+        year: "1846",
+        type: { en: "Ice Giant", es: "Gigante Helado" },
+        dist: { en: "30.05 AU", es: "30.05 UA" },
+        desc: {
+          en: "The outermost planet in the Solar System with the strongest recorded winds.",
+          es: "El planeta más distante del Sistema Solar con los vientos más fuertes registrados."
         }
       },
       {
         name: { en: "Pluto", es: "Plutón" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-%20July_14_2015.org.jpg/600px-Pluto_in_True_Color_-%20July_14_2015.org.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pluto_in_True_Color_-_July_14_2015.org.jpg",
         year: "1930",
         type: { en: "Dwarf Planet", es: "Planeta Enano" },
-        dist: "39.5 AU",
+        dist: { en: "39.5 AU", es: "39.5 UA" },
         desc: {
-          en: "A dwarf planet in the Kuiper Belt with a heart-shaped glacier named Tombaugh Regio.",
-          es: "Un planeta enano en el Cinturón de Kuiper con un glaciar en forma de corazón llamado Tombaugh Regio."
+          en: "Famous dwarf planet located in the Kuiper Belt with a heart-shaped glacier.",
+          es: "Famoso planeta enano ubicado en el Cinturón de Kuiper con un glaciar en forma de corazón."
+        }
+      },
+      {
+        name: { en: "Halley's Comet", es: "Cometa Halley" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lspn_comet_halley.jpg",
+        year: "240 BC",
+        type: { en: "Periodic Comet", es: "Cometa Periódico" },
+        dist: { en: "0.59 to 35 AU", es: "0.59 a 35 UA" },
+        desc: {
+          en: "A short-period comet visible from Earth every 75–76 years.",
+          es: "Un cometa de período corto visible desde la Tierra cada 75-76 años."
         }
       }
     ]
@@ -89,40 +188,62 @@ const database = [
   {
     id: "stars",
     name: { en: "Stars", es: "Estrellas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/600px-Crab_Nebula.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/5/57/Betelgeuse_captured_by_ALMA.jpg",
     subtext: { en: "Main Sequence, Red Giants, Supergiants, Brown Dwarfs", es: "Secuencia Principal, Gigantes Rojas, Supergigantes, Enanas Marrones" },
     items: [
       {
-        name: { en: "Betelgeuse", es: "Betelgeuse" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Betelgeuse_captured_by_ALMA.jpg/600px-Betelgeuse_captured_by_ALMA.jpg",
-        year: { en: "Prehistoric", es: "Prehistórico" },
-        type: { en: "Red Supergiant", es: "Supergigante Roja" },
-        dist: "642.5 Light Years / Años Luz",
-        desc: {
-          en: "A massive red supergiant star in the constellation Orion nearing the end of its life.",
-          es: "Una enorme estrella supergigante roja en la constelación de Orión cerca del final de su vida."
-        }
-      },
-      {
         name: { en: "Sirius A", es: "Sirio A" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sirius_A_and_B_art_concept.jpg/600px-Sirius_A_and_B_art_concept.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sirius_A_and_B_art_concept.jpg",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Main Sequence (A1V)", es: "Secuencia Principal (A1V)" },
-        dist: "8.6 Light Years / Años Luz",
+        dist: { en: "8.6 Light Years", es: "8.6 Años Luz" },
         desc: {
-          en: "The brightest star in Earth's night sky, located in the constellation Canis Major.",
-          es: "La estrella más brillante en el cielo nocturno de la Tierra, ubicada en Canis Major."
+          en: "The brightest star in Earth's night sky, located in Canis Major.",
+          es: "La estrella más brillante del cielo nocturno de la Tierra, ubicada en Canis Major."
         }
       },
       {
-        name: { en: "VY Canis Majoris", es: "VY Canis Majoris" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Comparison_sun_vy_canis_majoris.svg/600px-Comparison_sun_vy_canis_majoris.svg.png",
-        year: "1801",
-        type: { en: "Red Hypergiant", es: "Hipergigante Roja" },
-        dist: "3,900 Light Years / Años Luz",
+        name: { en: "Betelgeuse", es: "Betelgeuse" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/57/Betelgeuse_captured_by_ALMA.jpg",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Red Supergiant", es: "Supergigante Roja" },
+        dist: { en: "642.5 Light Years", es: "642.5 Años Luz" },
         desc: {
-          en: "One of the largest known stars by radius, over 1,400 times larger than our Sun.",
-          es: "Una de las estrellas más grandes conocidas por radio, más de 1,400 veces más grande que el Sol."
+          en: "A massive red supergiant star in Orion expected to explode in a supernova.",
+          es: "Una enorme estrella supergigante roja en Orión que explotará como supernova."
+        }
+      },
+      {
+        name: { en: "UY Scuti", es: "UY Scuti" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/09/UY_Scuti_size_comparison.png",
+        year: "1860",
+        type: { en: "Red Hypergiant", es: "Hipergigante Roja" },
+        dist: { en: "9,500 Light Years", es: "9,500 Años Luz" },
+        desc: {
+          en: "One of the largest known stars by volume, with a radius ~1,700 times larger than the Sun.",
+          es: "Una de las estrellas más grandes conocidas por volumen, con un radio ~1,700 veces mayor que el Sol."
+        }
+      },
+      {
+        name: { en: "Stephenson 2-18", es: "Stephenson 2-18" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Stephenson_2-18_size_comparison_with_the_Sun.png",
+        year: "1990",
+        type: { en: "Red Supergiant", es: "Supergigante Roja" },
+        dist: { en: "18,900 Light Years", es: "18,900 Años Luz" },
+        desc: {
+          en: "Currently candidate for the largest known star, with a radius over 2,100 times the Sun's.",
+          es: "Candidata a ser la estrella más grande conocida, con un radio de más de 2,100 veces el del Sol."
+        }
+      },
+      {
+        name: { en: "Proxima Centauri", es: "Próxima Centauri" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Proxima_Centauri_by_HST.jpg",
+        year: "1915",
+        type: { en: "Red Dwarf (M5.5Ve)", es: "Enana Roja (M5.5Ve)" },
+        dist: { en: "4.24 Light Years", es: "4.24 Años Luz" },
+        desc: {
+          en: "The closest star to our Solar System.",
+          es: "La estrella más cercana a nuestro Sistema Solar."
         }
       }
     ]
@@ -130,29 +251,51 @@ const database = [
   {
     id: "exoplanets",
     name: { en: "Exoplanets", es: "Exoplanetas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Exoplanet_Comparison_Kepler-22b.png/600px-Exoplanet_Comparison_Kepler-22b.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/1/1b/PIA21422_-_TRAPPIST-1e_artist_impression_2018.jpg",
     subtext: { en: "Hot Jupiters, Super-Earths, Habitable Zone Worlds", es: "Júpiteres Calientes, Supertierras, Mundos Habitables" },
     items: [
       {
         name: { en: "TRAPPIST-1e", es: "TRAPPIST-1e" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/PIA21422_-_TRAPPIST-1e_artist_impression_2018.jpg/600px-PIA21422_-_TRAPPIST-1e_artist_impression_2018.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/1b/PIA21422_-_TRAPPIST-1e_artist_impression_2018.jpg",
         year: "2017",
         type: { en: "Terrestrial Super-Earth", es: "Supertierra Terrestre" },
-        dist: "40 Light Years / Años Luz",
+        dist: { en: "40 Light Years", es: "40 Años Luz" },
         desc: {
-          en: "An Earth-sized exoplanet orbiting in the habitable zone of the ultra-cool dwarf star TRAPPIST-1.",
-          es: "Un exoplaneta del tamaño de la Tierra en la zona habitable de la enana ultrafría TRAPPIST-1."
+          en: "An Earth-sized exoplanet orbiting in the habitable zone of TRAPPIST-1.",
+          es: "Un exoplaneta del tamaño de la Tierra en la zona habitable de TRAPPIST-1."
+        }
+      },
+      {
+        name: { en: "Kepler-452b", es: "Kepler-452b" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/07/Kepler-452b_artist_concept.jpg",
+        year: "2015",
+        type: { en: "Super-Earth", es: "Supertierra" },
+        dist: { en: "1,800 Light Years", es: "1,800 Años Luz" },
+        desc: {
+          en: "Often called 'Earth's Cousin', orbiting a Sun-like star in its habitable zone.",
+          es: "A menudo llamado 'Primo de la Tierra', orbita una estrella similar al Sol en su zona habitable."
         }
       },
       {
         name: { en: "HD 189733b", es: "HD 189733b" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Artist%27s_impression_of_the_deep_blue_planet_HD_189733b.jpg/600px-Artist%27s_impression_of_the_deep_blue_planet_HD_189733b.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/04/Artist%27s_impression_of_the_deep_blue_planet_HD_189733b.jpg",
         year: "2005",
         type: { en: "Hot Jupiter", es: "Júpiter Caliente" },
-        dist: "64.5 Light Years / Años Luz",
+        dist: { en: "64.5 Light Years", es: "64.5 Años Luz" },
         desc: {
-          en: "A deep blue exoplanet where it rains molten glass sideways due to 8,700 km/h winds.",
-          es: "Un exoplaneta azul profundo donde llueve cristal fundido de lado debido a vientos de 8,700 km/h."
+          en: "A deep blue exoplanet where it rains molten glass sideways at 8,700 km/h.",
+          es: "Un exoplaneta azul donde llueve cristal fundido de lado a 8,700 km/h."
+        }
+      },
+      {
+        name: { en: "Proxima Centauri b", es: "Próxima Centauri b" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/01/Artist%27s_impression_of_Proxima_Centauri_b.jpg",
+        year: "2016",
+        type: { en: "Super-Earth", es: "Supertierra" },
+        dist: { en: "4.24 Light Years", es: "4.24 Años Luz" },
+        desc: {
+          en: "The closest exoplanet to Earth, located in the habitable zone of Proxima Centauri.",
+          es: "El exoplaneta más cercano a la Tierra, ubicado en la zona habitable de Próxima Centauri."
         }
       }
     ]
@@ -160,15 +303,15 @@ const database = [
   {
     id: "black-holes",
     name: { en: "Black Holes", es: "Agujeros Negros" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Illustration.png/600px-Black_hole_-_Illustration.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/EHT_Sgr_A_Black_Hole.jpg",
     subtext: { en: "Stellar-mass, Intermediate, Supermassive", es: "Masa Estelar, Intermedios, Supermasivos" },
     items: [
       {
         name: { en: "Sagittarius A*", es: "Sagitario A*" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/EHT_Sgr_A_Black_Hole.jpg/600px-EHT_Sgr_A_Black_Hole.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/EHT_Sgr_A_Black_Hole.jpg",
         year: "1974",
         type: { en: "Supermassive Black Hole", es: "Agujero Negro Supermasivo" },
-        dist: "26,680 Light Years / Años Luz",
+        dist: { en: "26,680 Light Years", es: "26,680 Años Luz" },
         desc: {
           en: "The supermassive black hole located at the Galactic Center of the Milky Way.",
           es: "El agujero negro supermasivo ubicado en el Centro Galáctico de la Vía Láctea."
@@ -176,24 +319,35 @@ const database = [
       },
       {
         name: { en: "M87*", es: "M87*" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Orange_ring_%28FINAL%29.png/600px-Black_hole_-_Orange_ring_%28FINAL%29.png",
+        img: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Orange_ring_%28FINAL%29.png",
         year: "1918 (Image: 2019)",
         type: { en: "Supermassive Black Hole", es: "Agujero Negro Supermasivo" },
-        dist: "53.5 Million Light Years / Millones de Años Luz",
+        dist: { en: "53.5 Million Light Years", es: "53.5 Millones de Años Luz" },
         desc: {
-          en: "The first black hole ever directly imaged by humanity using the Event Horizon Telescope.",
-          es: "El primer agujero negro fotografiado directamente por la humanidad usando el Event Horizon Telescope."
+          en: "The first black hole ever imaged by humanity using the Event Horizon Telescope.",
+          es: "El primer agujero negro fotografiado por la humanidad usando el Event Horizon Telescope."
         }
       },
       {
         name: { en: "TON 618", es: "TON 618" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Artist%27s_impression_of_a_supermassive_black_hole_in_a_quasar.jpg/600px-Artist%27s_impression_of_a_supermassive_black_hole_in_a_quasar.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Artist%27s_impression_of_a_supermassive_black_hole_in_a_quasar.jpg",
         year: "1957",
         type: { en: "Ultramassive Black Hole", es: "Agujero Negro Ultramasivo" },
-        dist: "18.2 Billion Light Years / Miles de Millones de Años Luz",
+        dist: { en: "18.2 Billion Light Years", es: "18.2 Miles de Millones de Años Luz" },
         desc: {
-          en: "One of the most massive black holes ever found, with a mass of 66 billion Suns.",
-          es: "Uno de los agujeros negros más masivos jamás encontrados, con una masa de 66 mil millones de Soles."
+          en: "One of the largest black holes ever discovered, with a mass of 66 billion Suns.",
+          es: "Uno de los agujeros negros más masivos descubiertos, con 66 mil millones de Soles de masa."
+        }
+      },
+      {
+        name: { en: "Cygnus X-1", es: "Cygnus X-1" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Cygnus_X-1_artist_impression.jpg",
+        year: "1964",
+        type: { en: "Stellar-mass Black Hole", es: "Agujero Negro de Masa Estelar" },
+        dist: { en: "6,070 Light Years", es: "6,070 Años Luz" },
+        desc: {
+          en: "The first astronomical X-ray source widely accepted to be a black hole.",
+          es: "La primera fuente de rayos X astronómica aceptada como un agujero negro."
         }
       }
     ]
@@ -201,29 +355,51 @@ const database = [
   {
     id: "galaxies",
     name: { en: "Galaxies", es: "Galaxias" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Milky_Way_Night_Sky_Reflection_in_Altiplano_Bolivia.jpg/600px-Milky_Way_Night_Sky_Reflection_in_Altiplano_Bolivia.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/M31_Andromeda_Galaxy_head.jpg",
     subtext: { en: "Spiral, Elliptical, Irregular, Galaxy Clusters", es: "Espiral, Elíptica, Irregular, Cúmulos Galácticos" },
     items: [
       {
+        name: { en: "Milky Way", es: "Vía Láctea" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/09/Milky_Way_Night_Sky_Reflection_in_Altiplano_Bolivia.jpg",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Barred Spiral Galaxy", es: "Galaxia Espiral Barrada" },
+        dist: { en: "0 Light Years (We are inside)", es: "0 Años Luz (Estamos dentro)" },
+        desc: {
+          en: "Our home galaxy containing between 100 to 400 billion stars.",
+          es: "Nuestra galaxia hogar que contiene entre 100 y 400 mil millones de estrellas."
+        }
+      },
+      {
         name: { en: "Andromeda Galaxy (M31)", es: "Galaxia de Andrómeda (M31)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/M31_Andromeda_Galaxy_head.jpg/600px-M31_Andromeda_Galaxy_head.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/M31_Andromeda_Galaxy_head.jpg",
         year: "964 AD",
         type: { en: "Barred Spiral Galaxy", es: "Galaxia Espiral Barrada" },
-        dist: "2.5 Million Light Years / Millones de Años Luz",
+        dist: { en: "2.5 Million Light Years", es: "2.5 Millones de Años Luz" },
         desc: {
-          en: "The nearest major galaxy to the Milky Way, expected to collide with our galaxy in 4.5 billion years.",
-          es: "La galaxia grande más cercana a la Vía Láctea. Se espera que colisione con nosotros en 4,500 millones de años."
+          en: "The nearest major galaxy to the Milky Way, heading for a future collision.",
+          es: "La galaxia grande más cercana a la Vía Láctea, camino a una colisión futura."
         }
       },
       {
         name: { en: "Sombrero Galaxy (M104)", es: "Galaxia del Sombrero (M104)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hubble_ultraviolet_submillimeter_eso_1200.jpg/600px-M104_ngc4594_sombrero_galaxy_hubble_ultraviolet_submillimeter_eso_1200.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/5e/M104_ngc4594_sombrero_galaxy_hubble_ultraviolet_submillimeter_eso_1200.jpg",
         year: "1781",
-        type: { en: "Unbarred Spiral / Elliptical", es: "Espiral No Barrada / Elíptica" },
-        dist: "31.1 Million Light Years / Millones de Años Luz",
+        type: { en: "Spiral Galaxy", es: "Galaxia Espiral" },
+        dist: { en: "31.1 Million Light Years", es: "31.1 Millones de Años Luz" },
         desc: {
-          en: "Famous for its bright white core encircled by thick dust lanes, resembling a Mexican hat.",
-          es: "Famosa por su núcleo blanco brillante rodeado de oscuras franjas de polvo, similar a un sombrero."
+          en: "Has a prominent dust lane surrounding a large bright central bulge.",
+          es: "Tiene una prominente banda de polvo rodeando un gran núcleo brillante."
+        }
+      },
+      {
+        name: { en: "Triangulum Galaxy (M33)", es: "Galaxia del Triángulo (M33)" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/10/M33_-_Triangulum_Galaxy.jpg",
+        year: "1654",
+        type: { en: "Spiral Galaxy", es: "Galaxia Espiral" },
+        dist: { en: "2.73 Million Light Years", es: "2.73 Millones de Años Luz" },
+        desc: {
+          en: "The third-largest member of the Local Group of galaxies.",
+          es: "El tercer miembro más grande del Grupo Local de galaxias."
         }
       }
     ]
@@ -231,29 +407,51 @@ const database = [
   {
     id: "nebulae",
     name: { en: "Nebulae", es: "Nebulosas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Eagle_nebula_pillars.jpg/600px-Eagle_nebula_pillars.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/6/68/Pillars_of_creation_2014_HST_0.jpg",
     subtext: { en: "Emission, Reflection, Planetary, Supernova Remnants", es: "Emisión, Reflexión, Planetarias, Remanentes de Supernova" },
     items: [
       {
         name: { en: "Pillars of Creation (M16)", es: "Pilares de la Creación (M16)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pillars_of_creation_2014_HST_0.jpg/600px-Pillars_of_creation_2014_HST_0.jpg",
-        year: "1995 (Hubble Image)",
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/68/Pillars_of_creation_2014_HST_0.jpg",
+        year: "1995",
         type: { en: "H II Region / Star-forming region", es: "Región H II / Criadero Estelar" },
-        dist: "7,000 Light Years / Años Luz",
+        dist: { en: "7,000 Light Years", es: "7,000 Años Luz" },
         desc: {
-          en: "Elephants' trunks of interstellar gas and dust in the Eagle Nebula, capturing star formation.",
-          es: "Trompas de elefante de gas y polvo interestelar en la Nebulosa del Águila formando nuevas estrellas."
+          en: "Iconic interstellar gas and dust pillars in the Eagle Nebula forming new stars.",
+          es: "Icónicas columnas de gas y polvo en la Nebulosa del Águila formando estrellas."
         }
       },
       {
-        name: { en: "Carina Nebula", es: "Nebulosa de Karina" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/JWST_2022-07-12_Cosmic_Cliffs.png/600px-JWST_2022-07-12_Cosmic_Cliffs.png",
+        name: { en: "Carina Nebula (Cosmic Cliffs)", es: "Nebulosa de Karina" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/02/JWST_2022-07-12_Cosmic_Cliffs.png",
         year: "1752",
         type: { en: "Emission Nebula", es: "Nebulosa de Emisión" },
-        dist: "8,500 Light Years / Años Luz",
+        dist: { en: "8,500 Light Years", es: "8,500 Años Luz" },
         desc: {
-          en: "A massive bright nebula imaged by the James Webb Space Telescope revealing 'Cosmic Cliffs'.",
-          es: "Una enorme nebulosa fotografiada por el Telescopio James Webb mostrando sus 'Acantilados Cósmicos'."
+          en: "Famed JWST image showing young star-forming regions dubbed 'Cosmic Cliffs'.",
+          es: "Famosa imagen del JWST mostrando regiones de formación estelar llamadas 'Acantilados Cósmicos'."
+        }
+      },
+      {
+        name: { en: "Orion Nebula (M42)", es: "Nebulosa de Orión (M42)" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_raw.jpg",
+        year: "1610",
+        type: { en: "Diffuse Nebula", es: "Nebulosa Difusa" },
+        dist: { en: "1,344 Light Years", es: "1,344 Años Luz" },
+        desc: {
+          en: "The closest region of massive star formation to Earth, visible to the naked eye.",
+          es: "La región de formación de estrellas masivas más cercana a la Tierra, visible a simple vista."
+        }
+      },
+      {
+        name: { en: "Ring Nebula (M57)", es: "Nebulosa del Anillo (M57)" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/13/Ring_Nebula_JWST.png",
+        year: "1779",
+        type: { en: "Planetary Nebula", es: "Nebulosa Planetaria" },
+        dist: { en: "2,570 Light Years", es: "2,570 Años Luz" },
+        desc: {
+          en: "A colorful planetary nebula formed when a dying star expelled its outer layers.",
+          es: "Una colorida nebulosa planetaria formada al expulsar una estrella moribunda sus capas."
         }
       }
     ]
@@ -261,18 +459,29 @@ const database = [
   {
     id: "neutron-stars",
     name: { en: "Neutron Stars & Pulsars", es: "Estrellas de Neutrones y Púlsares" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Neutron_star_illustration.jpg/600px-Neutron_star_illustration.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/00/Crab_Nebula.jpg",
     subtext: { en: "Magnetars, Pulsars", es: "Magnetares, Púlsares" },
     items: [
       {
         name: { en: "Crab Pulsar", es: "Púlsar del Cangrejo" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/600px-Crab_Nebula.jpg",
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/00/Crab_Nebula.jpg",
         year: "1968",
         type: { en: "Pulsar (Neutron Star)", es: "Púlsar (Estrella de Neutrones)" },
-        dist: "6,500 Light Years / Años Luz",
+        dist: { en: "6,500 Light Years", es: "6,500 Años Luz" },
         desc: {
-          en: "A young neutron star spinning 30 times per second at the center of the Crab Nebula.",
-          es: "Una joven estrella de neutrones que gira 30 veces por segundo en el centro de la Nebulosa del Cangrejo."
+          en: "Spins 30 times per second at the center of the Crab Nebula supernova remnant.",
+          es: "Gira 30 veces por segundo en el centro de la remanente de supernova del Cangrejo."
+        }
+      },
+      {
+        name: { en: "Vela Pulsar", es: "Púlsar de Vela" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Vela_Pulsar_from_Chandra.jpg",
+        year: "1968",
+        type: { en: "Pulsar", es: "Púlsar" },
+        dist: { en: "936 Light Years", es: "936 Años Luz" },
+        desc: {
+          en: "Associated with the Vela Supernova Remnant, spinning 11 times per second.",
+          es: "Asociado a la Remanente de Supernova de Vela, gira 11 veces por segundo."
         }
       }
     ]
@@ -280,18 +489,29 @@ const database = [
   {
     id: "white-dwarfs",
     name: { en: "White Dwarfs", es: "Enanas Blancas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/White_dwarf_comparison.png/600px-White_dwarf_comparison.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sirius_A_and_B_art_concept.jpg",
     subtext: { en: "Stellar Remnants", es: "Remanentes Estelares" },
     items: [
       {
-        name: { en: "Sirius B ('The Pup')", es: "Sirio B ('El Cachorro')" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sirius_A_and_B_art_concept.jpg/600px-Sirius_A_and_B_art_concept.jpg",
+        name: { en: "Sirius B", es: "Sirio B" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sirius_A_and_B_art_concept.jpg",
         year: "1862",
         type: { en: "White Dwarf", es: "Enana Blanca" },
-        dist: "8.6 Light Years / Años Luz",
+        dist: { en: "8.6 Light Years", es: "8.6 Años Luz" },
         desc: {
-          en: "The closest white dwarf star to Earth, orbiting its companion Sirius A.",
-          es: "La estrella enana blanca más cercana a la Tierra, orbitando a su compañera Sirio A."
+          en: "The closest white dwarf to Earth, orbiting Sirius A.",
+          es: "La enana blanca más cercana a la Tierra, orbitando a Sirio A."
+        }
+      },
+      {
+        name: { en: "Procyon B", es: "Proción B" },
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Procyon_system_art_concept.jpg",
+        year: "1896",
+        type: { en: "White Dwarf", es: "Enana Blanca" },
+        dist: { en: "11.46 Light Years", es: "11.46 Años Luz" },
+        desc: {
+          en: "A faint white dwarf companion orbiting the bright star Procyon A.",
+          es: "Una tenue enana blanca que orbita a la brillante estrella Proción A."
         }
       }
     ]
@@ -326,7 +546,7 @@ function renderCategories() {
   const grid = document.getElementById('app-grid');
   grid.innerHTML = database.map((cat, idx) => `
     <div class="card" onclick="openCategory(${idx})">
-      <img src="${cat.img}" alt="${cat.name[currentLang]}" loading="lazy">
+      <img src="${cat.img}" alt="${cat.name[currentLang]}">
       <div class="card-content">
         <h3>${cat.name[currentLang]}</h3>
         <p>${cat.subtext[currentLang]}</p>
@@ -350,7 +570,7 @@ function renderItems(catIdx) {
   const grid = document.getElementById('app-grid');
   grid.innerHTML = cat.items.map((item, itemIdx) => `
     <div class="card" onclick="openModal(${catIdx}, ${itemIdx})">
-      <img src="${item.img}" alt="${item.name[currentLang]}" loading="lazy">
+      <img src="${item.img}" alt="${item.name[currentLang]}">
       <div class="card-content">
         <h3>${item.name[currentLang]}</h3>
         <p>${typeof item.type === 'object' ? item.type[currentLang] : item.type}</p>
@@ -365,7 +585,7 @@ function openModal(catIdx, itemIdx) {
   document.getElementById('modal-title').innerText = item.name[currentLang];
   document.getElementById('modal-year').innerText = typeof item.year === 'object' ? item.year[currentLang] : item.year;
   document.getElementById('modal-type').innerText = typeof item.type === 'object' ? item.type[currentLang] : item.type;
-  document.getElementById('modal-dist').innerText = item.dist;
+  document.getElementById('modal-dist').innerText = typeof item.dist === 'object' ? item.dist[currentLang] : item.dist;
   document.getElementById('modal-desc').innerText = item.desc[currentLang];
   
   document.getElementById('object-modal').style.display = 'flex';
@@ -375,4 +595,5 @@ function closeModal() {
   document.getElementById('object-modal').style.display = 'none';
 }
 
+// Inicializar la aplicación
 updateTexts();
