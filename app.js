@@ -26,12 +26,12 @@ const database = [
   {
     id: "solar-system",
     name: { en: "Solar System", es: "Sistema Solar" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Planets2013.svg",
+    img: "https://i.postimg.cc/fbGBwfJJ/Solar-System.png",
     subtext: { en: "Planets, Moons, Dwarf Planets, Asteroids & Comets", es: "Planetas, Lunas, Planetas Enanos, Asteroides y Cometas" },
     items: [
       {
         name: { en: "The Sun", es: "El Sol" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+        img: "https://i.postimg.cc/Pfz2jZHK/Sun.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Yellow Dwarf Star (G2V)", es: "Estrella Enana Amarilla (G2V)" },
         dist: { en: "0.0000158 AU (149.6M km)", es: "0.0000158 UA (149.6M km)" },
@@ -42,7 +42,7 @@ const database = [
       },
       {
         name: { en: "Mercury", es: "Mercurio" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_c1666130949_desktop.png",
+        img: "https://i.postimg.cc/Hkj2XhMc/mercury.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
         dist: { en: "0.39 AU", es: "0.39 UA" },
@@ -53,7 +53,7 @@ const database = [
       },
       {
         name: { en: "Venus", es: "Venus" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg",
+        img: "https://i.postimg.cc/TwjqT8zg/venus.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
         dist: { en: "0.72 AU", es: "0.72 UA" },
@@ -64,7 +64,7 @@ const database = [
       },
       {
         name: { en: "Earth", es: "Tierra" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
+        img: "https://i.postimg.cc/D0BrbryQ/earth.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
         dist: { en: "0 AU", es: "0 UA" },
@@ -75,7 +75,7 @@ const database = [
       },
       {
         name: { en: "The Moon", es: "La Luna" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg",
+        img: "https://i.postimg.cc/MK306mFF/moon.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Natural Satellite", es: "Satélite Natural" },
         dist: { en: "0.00257 AU (384,400 km)", es: "0.00257 UA (384,400 km)" },
@@ -86,7 +86,7 @@ const database = [
       },
       {
         name: { en: "Mars", es: "Marte" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg",
+        img: "https://i.postimg.cc/nz1764mK/mars.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Terrestrial Planet", es: "Planeta Terrestre" },
         dist: { en: "1.52 AU", es: "1.52 UA" },
@@ -96,19 +96,8 @@ const database = [
         }
       },
       {
-        name: { en: "Jupiter", es: "Júpiter" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28PNG%29.png",
-        year: { en: "Prehistoric", es: "Prehistórico" },
-        type: { en: "Gas Giant", es: "Gigante Gaseoso" },
-        dist: { en: "5.20 AU", es: "5.20 UA" },
-        desc: {
-          en: "The largest planet in the Solar System, famous for its Great Red Spot.",
-          es: "El planeta más grande del Sistema Solar, famoso por su Gran Mancha Roja."
-        }
-      },
-      {
         name: { en: "Europa", es: "Europa" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/5/54/Europa-moon-with-margins.jpg",
+        img: "https://i.postimg.cc/RCXKdT4F/europa.png",
         year: "1610",
         type: { en: "Galilean Moon", es: "Luna Galileana" },
         dist: { en: "5.20 AU", es: "5.20 UA" },
@@ -118,19 +107,30 @@ const database = [
         }
       },
       {
+        name: { en: "Jupiter", es: "Júpiter" },
+        img: "https://i.postimg.cc/Z5yNTt33/jupiter.png",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Gas Giant", es: "Gigante Gaseoso" },
+        dist: { en: "5.20 AU", es: "5.20 UA" },
+        desc: {
+          en: "The largest planet in the Solar System, famous for its Great Red Spot.",
+          es: "El planeta más grande del Sistema Solar, famoso por su Gran Mancha Roja."
+        }
+      },
+      {
         name: { en: "Saturn", es: "Saturno" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Saturn_with_auroras.jpg",
+        img: "https://i.postimg.cc/FRhkgY6k/saturn.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Gas Giant", es: "Gigante Gaseoso" },
         dist: { en: "9.58 AU", es: "9.58 UA" },
         desc: {
-          en: "Famous for its stunning and ring system composed primarily of ice particles.",
+          en: "Famous for its stunning ring system composed primarily of ice particles.",
           es: "Famoso por su impresionante sistema de anillos compuesto principalmente de hielo."
         }
       },
       {
         name: { en: "Titan", es: "Titán" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/4/45/Titan_in_true_color.jpg",
+        img: "https://i.postimg.cc/7h6Cdpw6/titan.png",
         year: "1655",
         type: { en: "Natural Satellite", es: "Satélite Natural" },
         dist: { en: "9.58 AU", es: "9.58 UA" },
@@ -141,7 +141,7 @@ const database = [
       },
       {
         name: { en: "Uranus", es: "Urano" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg",
+        img: "https://i.postimg.cc/WbxDYWyf/uranus.png",
         year: "1781",
         type: { en: "Ice Giant", es: "Gigante Helado" },
         dist: { en: "19.22 AU", es: "19.22 UA" },
@@ -152,7 +152,7 @@ const database = [
       },
       {
         name: { en: "Neptune", es: "Neptuno" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg",
+        img: "https://i.postimg.cc/Qd5F2gGY/neptune.png",
         year: "1846",
         type: { en: "Ice Giant", es: "Gigante Helado" },
         dist: { en: "30.05 AU", es: "30.05 UA" },
@@ -163,7 +163,7 @@ const database = [
       },
       {
         name: { en: "Pluto", es: "Plutón" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pluto_in_True_Color_-_July_14_2015.org.jpg",
+        img: "https://i.postimg.cc/V6s503Sj/pluto.png",
         year: "1930",
         type: { en: "Dwarf Planet", es: "Planeta Enano" },
         dist: { en: "39.5 AU", es: "39.5 UA" },
@@ -174,7 +174,7 @@ const database = [
       },
       {
         name: { en: "Halley's Comet", es: "Cometa Halley" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lspn_comet_halley.jpg",
+        img: "https://i.postimg.cc/MTsH7dVx/halley.png",
         year: "240 BC",
         type: { en: "Periodic Comet", es: "Cometa Periódico" },
         dist: { en: "0.59 to 35 AU", es: "0.59 a 35 UA" },
@@ -188,12 +188,12 @@ const database = [
   {
     id: "stars",
     name: { en: "Stars", es: "Estrellas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/5/57/Betelgeuse_captured_by_ALMA.jpg",
+    img: "https://i.postimg.cc/c1b66kdH/betelgeuse-alma.png",
     subtext: { en: "Main Sequence, Red Giants, Supergiants, Brown Dwarfs", es: "Secuencia Principal, Gigantes Rojas, Supergigantes, Enanas Marrones" },
     items: [
       {
         name: { en: "Sirius A", es: "Sirio A" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sirius_A_and_B_art_concept.jpg",
+        img: "https://i.postimg.cc/Dwqzj2L4/sirius-a.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Main Sequence (A1V)", es: "Secuencia Principal (A1V)" },
         dist: { en: "8.6 Light Years", es: "8.6 Años Luz" },
@@ -204,7 +204,7 @@ const database = [
       },
       {
         name: { en: "Betelgeuse", es: "Betelgeuse" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/5/57/Betelgeuse_captured_by_ALMA.jpg",
+        img: "https://i.postimg.cc/c1b66kdH/betelgeuse-alma.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Red Supergiant", es: "Supergigante Roja" },
         dist: { en: "642.5 Light Years", es: "642.5 Años Luz" },
@@ -215,7 +215,7 @@ const database = [
       },
       {
         name: { en: "UY Scuti", es: "UY Scuti" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/09/UY_Scuti_size_comparison.png",
+        img: "https://i.postimg.cc/qvXkc1HZ/uy-scuti.png",
         year: "1860",
         type: { en: "Red Hypergiant", es: "Hipergigante Roja" },
         dist: { en: "9,500 Light Years", es: "9,500 Años Luz" },
@@ -226,24 +226,24 @@ const database = [
       },
       {
         name: { en: "Stephenson 2-18", es: "Stephenson 2-18" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Stephenson_2-18_size_comparison_with_the_Sun.png",
+        img: "https://i.postimg.cc/qM2tYXd1/stephenson-2-18.png",
         year: "1990",
         type: { en: "Red Supergiant", es: "Supergigante Roja" },
         dist: { en: "18,900 Light Years", es: "18,900 Años Luz" },
         desc: {
-          en: "Currently candidate for the largest known star, with a radius over 2,100 times the Sun's.",
+          en: "Candidate for the largest known star, with a radius over 2,100 times the Sun's.",
           es: "Candidata a ser la estrella más grande conocida, con un radio de más de 2,100 veces el del Sol."
         }
       },
       {
-        name: { en: "Proxima Centauri", es: "Próxima Centauri" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Proxima_Centauri_by_HST.jpg",
-        year: "1915",
-        type: { en: "Red Dwarf (M5.5Ve)", es: "Enana Roja (M5.5Ve)" },
-        dist: { en: "4.24 Light Years", es: "4.24 Años Luz" },
+        name: { en: "Alpha Centauri System", es: "Sistema Alfa Centauri" },
+        img: "https://i.postimg.cc/T39K2d1T/alpha-centauri.png",
+        year: "1689",
+        type: { en: "Triple Star System", es: "Sistema Estelar Triple" },
+        dist: { en: "4.37 Light Years", es: "4.37 Años Luz" },
         desc: {
-          en: "The closest star to our Solar System.",
-          es: "La estrella más cercana a nuestro Sistema Solar."
+          en: "The closest star system to our Solar System, containing Alpha Centauri A, B, and Proxima Centauri.",
+          es: "El sistema estelar más cercano a nuestro Sistema Solar, compuesto por Alfa Centauri A, B y Próxima Centauri."
         }
       }
     ]
@@ -251,12 +251,12 @@ const database = [
   {
     id: "exoplanets",
     name: { en: "Exoplanets", es: "Exoplanetas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/1/1b/PIA21422_-_TRAPPIST-1e_artist_impression_2018.jpg",
+    img: "https://i.postimg.cc/RV1FGSc3/trappist-1e.png",
     subtext: { en: "Hot Jupiters, Super-Earths, Habitable Zone Worlds", es: "Júpiteres Calientes, Supertierras, Mundos Habitables" },
     items: [
       {
         name: { en: "TRAPPIST-1e", es: "TRAPPIST-1e" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/1/1b/PIA21422_-_TRAPPIST-1e_artist_impression_2018.jpg",
+        img: "https://i.postimg.cc/RV1FGSc3/trappist-1e.png",
         year: "2017",
         type: { en: "Terrestrial Super-Earth", es: "Supertierra Terrestre" },
         dist: { en: "40 Light Years", es: "40 Años Luz" },
@@ -267,7 +267,7 @@ const database = [
       },
       {
         name: { en: "Kepler-452b", es: "Kepler-452b" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/07/Kepler-452b_artist_concept.jpg",
+        img: "https://i.postimg.cc/bv5Ndsj5/kepler-452b.png",
         year: "2015",
         type: { en: "Super-Earth", es: "Supertierra" },
         dist: { en: "1,800 Light Years", es: "1,800 Años Luz" },
@@ -278,7 +278,7 @@ const database = [
       },
       {
         name: { en: "HD 189733b", es: "HD 189733b" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/04/Artist%27s_impression_of_the_deep_blue_planet_HD_189733b.jpg",
+        img: "https://i.postimg.cc/bNRyk6hx/HD-189733b.png",
         year: "2005",
         type: { en: "Hot Jupiter", es: "Júpiter Caliente" },
         dist: { en: "64.5 Light Years", es: "64.5 Años Luz" },
@@ -289,7 +289,7 @@ const database = [
       },
       {
         name: { en: "Proxima Centauri b", es: "Próxima Centauri b" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/01/Artist%27s_impression_of_Proxima_Centauri_b.jpg",
+        img: "https://i.postimg.cc/7L5qvw2P/proxima-centauri-b.png",
         year: "2016",
         type: { en: "Super-Earth", es: "Supertierra" },
         dist: { en: "4.24 Light Years", es: "4.24 Años Luz" },
@@ -303,12 +303,12 @@ const database = [
   {
     id: "black-holes",
     name: { en: "Black Holes", es: "Agujeros Negros" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/EHT_Sgr_A_Black_Hole.jpg",
+    img: "https://i.postimg.cc/RFf9Fdd3/saggitarius-a.png",
     subtext: { en: "Stellar-mass, Intermediate, Supermassive", es: "Masa Estelar, Intermedios, Supermasivos" },
     items: [
       {
         name: { en: "Sagittarius A*", es: "Sagitario A*" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/EHT_Sgr_A_Black_Hole.jpg",
+        img: "https://i.postimg.cc/RFf9Fdd3/saggitarius-a.png",
         year: "1974",
         type: { en: "Supermassive Black Hole", es: "Agujero Negro Supermasivo" },
         dist: { en: "26,680 Light Years", es: "26,680 Años Luz" },
@@ -319,7 +319,7 @@ const database = [
       },
       {
         name: { en: "M87*", es: "M87*" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Orange_ring_%28FINAL%29.png",
+        img: "https://i.postimg.cc/TP5v70Z4/m87blackhole.png",
         year: "1918 (Image: 2019)",
         type: { en: "Supermassive Black Hole", es: "Agujero Negro Supermasivo" },
         dist: { en: "53.5 Million Light Years", es: "53.5 Millones de Años Luz" },
@@ -330,7 +330,7 @@ const database = [
       },
       {
         name: { en: "TON 618", es: "TON 618" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Artist%27s_impression_of_a_supermassive_black_hole_in_a_quasar.jpg",
+        img: "https://i.postimg.cc/T2JM4p4d/ton-618.png",
         year: "1957",
         type: { en: "Ultramassive Black Hole", es: "Agujero Negro Ultramasivo" },
         dist: { en: "18.2 Billion Light Years", es: "18.2 Miles de Millones de Años Luz" },
@@ -341,7 +341,7 @@ const database = [
       },
       {
         name: { en: "Cygnus X-1", es: "Cygnus X-1" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Cygnus_X-1_artist_impression.jpg",
+        img: "https://i.postimg.cc/htwHdxfs/cygnus-x-1.png",
         year: "1964",
         type: { en: "Stellar-mass Black Hole", es: "Agujero Negro de Masa Estelar" },
         dist: { en: "6,070 Light Years", es: "6,070 Años Luz" },
@@ -355,12 +355,12 @@ const database = [
   {
     id: "galaxies",
     name: { en: "Galaxies", es: "Galaxias" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/M31_Andromeda_Galaxy_head.jpg",
+    img: "https://i.postimg.cc/kGfHXR0R/andromeda.png",
     subtext: { en: "Spiral, Elliptical, Irregular, Galaxy Clusters", es: "Espiral, Elíptica, Irregular, Cúmulos Galácticos" },
     items: [
       {
         name: { en: "Milky Way", es: "Vía Láctea" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/09/Milky_Way_Night_Sky_Reflection_in_Altiplano_Bolivia.jpg",
+        img: "https://i.postimg.cc/Y23ZxTvQ/milky-way.png",
         year: { en: "Prehistoric", es: "Prehistórico" },
         type: { en: "Barred Spiral Galaxy", es: "Galaxia Espiral Barrada" },
         dist: { en: "0 Light Years (We are inside)", es: "0 Años Luz (Estamos dentro)" },
@@ -371,7 +371,7 @@ const database = [
       },
       {
         name: { en: "Andromeda Galaxy (M31)", es: "Galaxia de Andrómeda (M31)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/M31_Andromeda_Galaxy_head.jpg",
+        img: "https://i.postimg.cc/kGfHXR0R/andromeda.png",
         year: "964 AD",
         type: { en: "Barred Spiral Galaxy", es: "Galaxia Espiral Barrada" },
         dist: { en: "2.5 Million Light Years", es: "2.5 Millones de Años Luz" },
@@ -382,7 +382,7 @@ const database = [
       },
       {
         name: { en: "Sombrero Galaxy (M104)", es: "Galaxia del Sombrero (M104)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/5/5e/M104_ngc4594_sombrero_galaxy_hubble_ultraviolet_submillimeter_eso_1200.jpg",
+        img: "https://i.postimg.cc/13gdstJV/sombrero.png",
         year: "1781",
         type: { en: "Spiral Galaxy", es: "Galaxia Espiral" },
         dist: { en: "31.1 Million Light Years", es: "31.1 Millones de Años Luz" },
@@ -393,7 +393,7 @@ const database = [
       },
       {
         name: { en: "Triangulum Galaxy (M33)", es: "Galaxia del Triángulo (M33)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/1/10/M33_-_Triangulum_Galaxy.jpg",
+        img: "https://i.postimg.cc/BndV60zJ/triangulum.png",
         year: "1654",
         type: { en: "Spiral Galaxy", es: "Galaxia Espiral" },
         dist: { en: "2.73 Million Light Years", es: "2.73 Millones de Años Luz" },
@@ -407,12 +407,12 @@ const database = [
   {
     id: "nebulae",
     name: { en: "Nebulae", es: "Nebulosas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/6/68/Pillars_of_creation_2014_HST_0.jpg",
+    img: "https://i.postimg.cc/KYS0b5KZ/pillars-of-creation.png",
     subtext: { en: "Emission, Reflection, Planetary, Supernova Remnants", es: "Emisión, Reflexión, Planetarias, Remanentes de Supernova" },
     items: [
       {
         name: { en: "Pillars of Creation (M16)", es: "Pilares de la Creación (M16)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/68/Pillars_of_creation_2014_HST_0.jpg",
+        img: "https://i.postimg.cc/KYS0b5KZ/pillars-of-creation.png",
         year: "1995",
         type: { en: "H II Region / Star-forming region", es: "Región H II / Criadero Estelar" },
         dist: { en: "7,000 Light Years", es: "7,000 Años Luz" },
@@ -423,7 +423,7 @@ const database = [
       },
       {
         name: { en: "Carina Nebula (Cosmic Cliffs)", es: "Nebulosa de Karina" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/02/JWST_2022-07-12_Cosmic_Cliffs.png",
+        img: "https://i.postimg.cc/0NYcyJm7/carina.png",
         year: "1752",
         type: { en: "Emission Nebula", es: "Nebulosa de Emisión" },
         dist: { en: "8,500 Light Years", es: "8,500 Años Luz" },
@@ -434,7 +434,7 @@ const database = [
       },
       {
         name: { en: "Orion Nebula (M42)", es: "Nebulosa de Orión (M42)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_raw.jpg",
+        img: "https://i.postimg.cc/xC9gJTy7/orion.png",
         year: "1610",
         type: { en: "Diffuse Nebula", es: "Nebulosa Difusa" },
         dist: { en: "1,344 Light Years", es: "1,344 Años Luz" },
@@ -445,7 +445,7 @@ const database = [
       },
       {
         name: { en: "Ring Nebula (M57)", es: "Nebulosa del Anillo (M57)" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/1/13/Ring_Nebula_JWST.png",
+        img: "https://i.postimg.cc/j25Xcg1C/ring-nebula.png",
         year: "1779",
         type: { en: "Planetary Nebula", es: "Nebulosa Planetaria" },
         dist: { en: "2,570 Light Years", es: "2,570 Años Luz" },
@@ -459,12 +459,12 @@ const database = [
   {
     id: "neutron-stars",
     name: { en: "Neutron Stars & Pulsars", es: "Estrellas de Neutrones y Púlsares" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/0/00/Crab_Nebula.jpg",
+    img: "https://i.postimg.cc/XqpfdZZx/crab-pulsar.png",
     subtext: { en: "Magnetars, Pulsars", es: "Magnetares, Púlsares" },
     items: [
       {
         name: { en: "Crab Pulsar", es: "Púlsar del Cangrejo" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/00/Crab_Nebula.jpg",
+        img: "https://i.postimg.cc/XqpfdZZx/crab-pulsar.png",
         year: "1968",
         type: { en: "Pulsar (Neutron Star)", es: "Púlsar (Estrella de Neutrones)" },
         dist: { en: "6,500 Light Years", es: "6,500 Años Luz" },
@@ -475,7 +475,7 @@ const database = [
       },
       {
         name: { en: "Vela Pulsar", es: "Púlsar de Vela" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Vela_Pulsar_from_Chandra.jpg",
+        img: "https://i.postimg.cc/FRPbYbK5/vela-pulsar.png",
         year: "1968",
         type: { en: "Pulsar", es: "Púlsar" },
         dist: { en: "936 Light Years", es: "936 Años Luz" },
@@ -489,12 +489,12 @@ const database = [
   {
     id: "white-dwarfs",
     name: { en: "White Dwarfs", es: "Enanas Blancas" },
-    img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sirius_A_and_B_art_concept.jpg",
+    img: "https://i.postimg.cc/RZr7JZvc/sirius-b.png",
     subtext: { en: "Stellar Remnants", es: "Remanentes Estelares" },
     items: [
       {
         name: { en: "Sirius B", es: "Sirio B" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sirius_A_and_B_art_concept.jpg",
+        img: "https://i.postimg.cc/RZr7JZvc/sirius-b.png",
         year: "1862",
         type: { en: "White Dwarf", es: "Enana Blanca" },
         dist: { en: "8.6 Light Years", es: "8.6 Años Luz" },
@@ -505,7 +505,7 @@ const database = [
       },
       {
         name: { en: "Procyon B", es: "Proción B" },
-        img: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Procyon_system_art_concept.jpg",
+        img: "https://i.postimg.cc/YC116B9r/procyon-b.png",
         year: "1896",
         type: { en: "White Dwarf", es: "Enana Blanca" },
         dist: { en: "11.46 Light Years", es: "11.46 Años Luz" },
