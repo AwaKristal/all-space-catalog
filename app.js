@@ -515,6 +515,69 @@ const database = [
         }
       }
     ]
+  },
+  {
+    id: "constellations",
+    name: { en: "Constellations", es: "Constelaciones" },
+    img: "https://i.postimg.cc/fWmYd0bs/osa-menor.png",
+    subtext: { en: "Stellar Patterns, Mythological Figures & Celestial Mapping", es: "Patrones Estelares, Figuras Mitológicas y Mapeo Celestial" },
+    items: [
+      {
+        name: { en: "Ursa Minor (Little Dipper)", es: "Osa Menor" },
+        img: "https://i.postimg.cc/fWmYd0bs/osa-menor.png",
+        year: { en: "Prehistoric (Cataloged by Ptolemy)", es: "Prehistórico (Catalogado por Ptolomeo)" },
+        type: { en: "Northern Constellation", es: "Constelación Boreal" },
+        dist: { en: "Variable (Polaris is ~433 Light Years)", es: "Variable (Polaris está a ~433 Años Luz)" },
+        desc: {
+          en: "Home to Polaris, the current North Star, crucial for celestial navigation in the Northern Hemisphere.",
+          es: "Hogar de Polaris, la actual Estrella Polar, fundamental para la navegación en el Hemisferio Norte."
+        }
+      },
+      {
+        name: { en: "Orion", es: "Orión" },
+        img: "https://i.postimg.cc/Qdx7v4JL/orion-pero-constelacion.png",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Equatorial Constellation", es: "Constelación Ecuatorial" },
+        dist: { en: "Variable (Stars range from 240 to 1,300+ Light Years)", es: "Variable (Estrellas entre 240 y 1,300+ Años Luz)" },
+        desc: {
+          en: "One of the most prominent and recognizable constellations in the night sky, featuring the famous Belt of Orion.",
+          es: "Una de las constelaciones más prominentes y reconocibles del cielo nocturno, destacando su famoso Cinturón."
+        }
+      },
+      {
+        name: { en: "Cygnus (The Swan)", es: "Cisne (Cygnus)" },
+        img: "https://i.postimg.cc/cLHKFK0D/costelacion-cisne.png",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Northern Constellation", es: "Constelación Boreal" },
+        dist: { en: "Variable (Deneb is ~2,600 Light Years)", es: "Variable (Deneb está a ~2,600 Años Luz)" },
+        desc: {
+          en: "A striking northern constellation lying along the plane of the Milky Way, containing the bright star Deneb.",
+          es: "Una llamativa constelación boreal situada en el plano de la Vía Láctea, que contiene la brillante estrella Deneb."
+        }
+      },
+      {
+        name: { en: "Hydra", es: "Hidra" },
+        img: "https://i.postimg.cc/3w0kHPyB/hidra-constelacion.png",
+        year: { en: "Prehistoric", es: "Prehistórico" },
+        type: { en: "Largest Modern Constellation", es: "La Constelación Moderna Más Grande" },
+        dist: { en: "Variable (Alphard is ~177 Light Years)", es: "Variable (Alphard está a ~177 Años Luz)" },
+        desc: {
+          en: "The largest of the 88 modern constellations, representing a water snake stretching across the celestial sphere.",
+          es: "La mayor de las 88 constelaciones modernas, representando una serpiente de agua que se extiende por la esfera celeste."
+        }
+      },
+      {
+        name: { en: "Phoenix", es: "Fénix" },
+        img: "https://i.postimg.cc/fL4JWBm3/constelacion-fenix.png",
+        year: "1603 (Johann Bayer)",
+        type: { en: "Southern Constellation", es: "Constelación Austral" },
+        dist: { en: "Variable (Ankaa is ~85 Light Years)", es: "Variable (Ankaa está a ~85 Años Luz)" },
+        desc: {
+          en: "A minor constellation in the southern sky, named after the mythical firebird of ancient legends.",
+          es: "Una constelación menor en el cielo austral, nombrada en honor al ave de fuego mitológica de las antiguas leyendas."
+        }
+      }
+    ]
   }
 ];
 
