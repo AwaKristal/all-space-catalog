@@ -568,7 +568,7 @@ const database = [
       },
       {
         name: { en: "Phoenix", es: "Fénix" },
-        img: "https://i.postimg.cc/fL4JWBm3/constelacion-fenix.png",
+        img: "https://i.postimg.cc/1X3PyqC9/phoenix.png",
         year: "1603 (Johann Bayer)",
         type: { en: "Southern Constellation", es: "Constelación Austral" },
         dist: { en: "Variable (Ankaa is ~85 Light Years)", es: "Variable (Ankaa está a ~85 Años Luz)" },
